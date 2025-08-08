@@ -221,31 +221,140 @@ footer .footer-rights{
     cursor: pointer;
   }
 
-  @media (max-width: 768px) {
-    nav .right ul {
+ /* =========================
+   Responsive Media Queries
+   ========================= */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+    nav {
         flex-direction: column;
-        width: 100%;
-        background: #222;
-        display: none;
+        height: auto;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .firstSection > div {
+        width: 80%;
+    }
+    .rightSection img {
+        width: 60%;
+    }
+    .secondSection .box {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+    .secondSection .vertical {
+        margin: 40px 40px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    .left {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .firstSection {
+        margin: 40px 0;
+    }
+    .leftSection {
+        font-size: 1.8rem;
+    }
+    .leftSection .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+    .rightSection img {
+        width: 70%;
+    }
+    .secondSection {
+        max-width: 95vw;
+        height: auto;
+    }
+    .secondSection h1{
+        text-align: center;
+    }
+    .secondSection .text-pale{
+        margin-left: 106px;
+    }
+    .vertical .image-top{
+        width: 30px;
+        position: relative;
+        top: 7px;
+        left: 2px;
     }
 
 
-nav .right ul {
-    display: flex;
-}
-
-.firstSection {
-    flex-direction: column;
-    text-align: center;
+    main hr {
+        margin: 30px;
+    }
+    .secondSection .box {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 30px;
+    }
+    .secondSection .vertical {
+        height: auto;
+        margin: 30px 0;
+    }
+    .vertical-title,
+    .sec-row,
+    .vertical-desc {
+        position: static;
+        text-align: center;
+        width: auto;
+    }
+    footer {
+        padding: 20px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        gap: 1rem;
+    }
+    .footer-second textarea {
+        width: 90%;
     }
 }
 
+/* Small mobile devices (portrait phones) */
 @media (max-width: 480px) {
     .leftSection {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
-
-    .buttons {
-        flex-direction: column;
+    .leftSection .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .profile-pic {
+        width: 18px;
+    }
+    nav {
+        padding: 0.5rem;
+    }
+    .rightSection img {
+        width: 85%;
     }
 }
+
