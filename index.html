@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naitik - Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <span>
+                    <img class="profile-pic" src="Profile.jpg" alt="">
+                </span> Naitik's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" class="nav-link" data-section="Home">Home</a></li>
+                    <li><a href="#" class="nav-link" data-section="About">About</a></li>
+                    <li><a href="#" class="nav-link" data-section="Services">Services</a></li>
+                    <li><a href="#" class="nav-link" data-section="Projects">Projects</a></li>
+                    <li><a href="#" class="nav-link" data-section="Contact">Contact Me</a></li>
+
+        <div id="popupModal" class="modal">
+            <div class="modal-content">
+              <span id="closeModal" class="close">&times;</span>
+              <div class="modalBody" id="modalBody"></div>
+              <!-- <h2>Coming Soon!</h2>
+              <p>This section is under development.</p> -->
+            </div>
+          </div>
+        <!-- <section id="Home">
+            <h1>Welcome to my Portfolio</h1>
+            <p>This is the <i>Home</i> section</p>
+        </section>
+        <section id="About">
+            <h1>About Me</h1>
+            <p>Details about me will go here.</p>
+        </section>
+        </section>
+        <section id="Services">
+            <h1>Services</h1>
+            <p>Details about my services will go here.</p>
+        </section>
+        <section id="Projects">
+            <h1>Projects</h1>
+            <p>Details about my projects will go here.</p>
+        </section>
+        <section id="Contact Me">
+            <h1>Contact Me</h1>
+            <p>Contact details will go here.</p>
+        </section> -->
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="blue">Naitik</span>
+                <div>and i am a passionate</div>
+                <!-- <div>Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"><a href="Naitik Resume.pdf" download>Downlaod Resume</a></button>
+                    <button class="btn"><a href="https://github.com/naitik-web-dot" target="_blank">Visit -
+                            Github</a></button>
+                    <button class="btn"><a href="https://www.linkedin.com/in/naitik-sharma-5182b9369/"
+                            target="_blank">Visit - LinkedIn</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="PngItem_1272225.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-pale">What i have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="Canva Logo.png" alt="">
+                    <div class="vertical-title">Graphic Designer</div>
+                    <div class="sec-row">(2023-2024)</div>
+                    <div class="vertical-desc">Creative in designing engaging visuals using Canva and Adobe tools,
+                        focusing on clean layouts, branding, and user-friendly designs for both digital and print
+                        projects.</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="HTML Logo.png" alt="">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="sec-row">(2024-2025)</div>
+                    <div class="vertical-desc">Proficient in crafting clean, semantic, and responsive HTML structures,
+                        ensuring cross-browser compatibility and accessibility while implementing modern web standards
+                        for optimal performance.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="CSS Logo.png" alt="">
+                    <div class="vertical-title">CSS Developer</div>
+                    <div class="sec-row">(2024-2025)</div>
+                    <div class="vertical-desc">Specialized in creating visually appealing layouts with CSS, mastering
+                        Flexbox, Grid, animations, and responsive design techniques to deliver modern, user-friendly web
+                        experiences.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-title">Web Developer</div>
+                    <div class="sec-row">(2024-2025)</div>
+                    <div class="vertical-desc">Experienced in building functional, responsive websites by integrating
+                        HTML, CSS, and JavaScript, ensuring speed, security, and mobile-friendly performance for diverse
+                        clients.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="fiver Logo.png"">
+                    <div class=" vertical-title">Freelance
+                </div>
+                <div class="sec-row">(2025)</div>
+                <div class="vertical-desc">Providing professional, customized design and web development solutions to
+                    clients worldwide, delivering projects on time with a focus on quality, creativity, and client
+                    satisfaction.
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Naitik's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <textarea name="desc" id="footer-second" rows="4" cols="35">Leave your Views👀</textarea>
+            </div>
+            <!-- <div class="footer-third"></div>
+            <div class="footer-fourth"></div> -->
+        </div>
+        <div class="footer-rights">
+            Copyright <img src="Rights Reserved.png" alt=""> www.naitiksportfolio.com | All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
